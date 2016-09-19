@@ -259,8 +259,14 @@ h3 {
 .page-number-content {
     box-sizing: border-box;
     -o-box-sizing: border-box;
-}
+    overflow: hidden;
+    width: 435px;
+    height: 89px;
+    position: relative;
 
+}
+ul,li { margin:0; padding:0; list-style:none}
+/*.page-number-content ul{ background: #111 ; color: #fff ; }*/
 .page-number-content .ss {
     display: inline-block;
     border-radius: 3px;
@@ -276,8 +282,34 @@ h3 {
     font-family:  Arial, sans-serif;
 
 }
+.jackpot {
+    position: absolute;
+    width: 364px;
+    height: 89px;
+    left: 15px;
+    top: 0;
+}
+.jackpot ul {
+    line-height: 89px;
+    background: url(../img/random.png) 50% 0 no-repeat;
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+    font-family:  Arial, sans-serif;
+    display: inline-block;
+    border-radius: 3px;
+    margin: 0 2px;
+}
+.jackpot ul li {
+    line-height: 89px;
+}
 .page-number-content .ss.last {
     color: #fbc804;
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 56px;
+    height: 89px;
 }
 .btn {
     display: inline-block;
@@ -312,6 +344,8 @@ h3 {
     -o-transition: all 0.2s ease;
     text-decoration: none!important;
     margin-bottom: 25px;
+    position: relative;
+    z-index: 2;
 }
 .btn:hover, .btn:active, .btn.hover {
     background-color: rgb(0, 232, 22);
