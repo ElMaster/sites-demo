@@ -312,6 +312,7 @@ ul,li { margin:0; padding:0; list-style:none}
     height: 89px;
 }
 .btn {
+    text-transform: uppercase;
     display: inline-block;
     margin-bottom: 0;
     font-weight: normal;
