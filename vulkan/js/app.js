@@ -1,4 +1,4 @@
-
+$('#bg-video').animate({opacity: 1}, 300);
 
 
 
